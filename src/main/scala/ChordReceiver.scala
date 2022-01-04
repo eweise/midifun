@@ -16,7 +16,7 @@ class ChordReceiver(val delegate: Receiver) extends Receiver {
 
         val chordMsg = new ShortMessage
         val note = shortMsg.getData1
-        val scale = Major()
+        val scale = Minor()
         val chord = scale.chord(note, 60)
         val timestamp = -1
         command match

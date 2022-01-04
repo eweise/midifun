@@ -21,7 +21,7 @@ class Scale(intervals: List[Int]) {
 
 class Major extends Scale(intervals = List(2, 2, 1, 2, 2, 2, 1))
 
-class Minor extends Scale(intervals = List(2, 1, 2, 2, 2, 2, 1))
+class Minor extends Scale(intervals = List(2, 1, 2, 2, 2, 1, 2))
 
 class LoopingList(val originalList: List[Int]) {
   var mutatingList = originalList
