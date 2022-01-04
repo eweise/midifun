@@ -10,7 +10,7 @@ object ReceiveMidi {
 
       val realReceiver = MidiSystem.getReceiver
       
-      val loggingReceiver = LoggingReceiver(realReceiver)
+      val loggingReceiver = ChordReceiver(realReceiver)
       device.getTransmitters.forEach{transmitter =>
         transmitter.setReceiver(loggingReceiver)
       }
